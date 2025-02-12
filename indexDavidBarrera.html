@@ -4,43 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        footer {
-            margin-top: 50px;
-            font-size: 12px;
-            color: gray;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="css/estilos.css">
 <body>
     <div class="container">
-        <h1>Mi primera página web</h1>
-        <p>David Sebastian Barrera</p>
-        <p>Estudiante Ingeniería de sistemas</p>
-        <p>Cel. 3246007203</p>
+        <h1 class="title">Mi primera página web</h1>
+        <img src="img/Foto-presentación.jpg" alt="Foto de perfil" class="profile-pic">
+        <p class="description">David Sebastian Barrera Gaona</p>
+        <p class="description">Estudiante Ingeniería de sistemas</p>
+        <p class="description">Cel. 3246007203</p>
         
-        <h2>Bienvenido</h2>
-        <p>Esta es mi primera página web donde aprenderemos a usar HTML.</p>
+        <h2 class="title">Bienvenido</h2>
+        <p class="description">Esta es mi primera página web donde aprenderemos a usar HTML.</p>
         
-        <ol>
+        <ol class="description">
             <li>Hola</li>
             <li>Registro de datos</li>
             <li>Enviar datos</li>
-        </ol>
+        </ol >
         
         <a href="registro.html">Ir al registro</a>
+
+        <!-- Sección de redes sociales -->
+        <div class="social-links">
+            <!--<h3 class="title">Redes Sociales</h3> -->
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sebasgao05/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://x.com/sebasgao05" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/sebasgao05" target="_blank">GitHub Peronal</a></li>
+                <li><a href="https://github.com/dsbarre81980" target="_blank">GitHub Educativo</a></li>
+            </ul>
+        </div>
+        <footer>
+            <p>&copy; 2025 Sebasgao05.</p>
+        </footer>
     </div>
-    <footer>
-        <p>&copy; 2025 Sebasgao05. Esta página web fue creada por David Sebastian Barrera.</p>
-    </footer>
 </body>
 </html>
