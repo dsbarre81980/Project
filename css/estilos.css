@@ -1,0 +1,90 @@
+/* estilos.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor de la tarjeta */
+.container {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Foto de perfil */
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+/* Nombre */
+.name {
+    font-size: 24px;
+    color: #333333;
+    margin: 10px 0;
+}
+
+/* Título */
+.title {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.description {
+    font-size: 14px;
+    color: #444444;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Redes sociales */
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #0077b5; /* Color por defecto para LinkedIn */
+}
+
+.social-links li a:hover {
+    color: #005582; /* Color al pasar el mouse para LinkedIn */
+}
+
+/* Colores específicos para cada red social */
+.social-links li a[href*="twitter.com"] {
+    color: #1DA1F2; /* Color para Twitter */
+}
+
+.social-links li a[href*="twitter.com"]:hover {
+    color: #1991db; /* Color al pasar el mouse para Twitter */
+}
+
+.social-links li a[href*="github.com"] {
+    color: #333333; /* Color para GitHub */
+}
+
+.social-links li a[href*="github.com"]:hover {
+    color: #000000; /* Color al pasar el mouse para GitHub */
+}
