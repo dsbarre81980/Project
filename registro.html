@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Datos</h1>
+        <form action="confirmacion.html" method="GET">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required><br><br>
+            
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad" required>
+                <option value="" disabled selected>Ingresa tu ciudad</option>
+                <option value="bogota">Bogotá</option>
+                <option value="boyaca">Boyacá</option>
+                <option value="medellin">Medellín</option>
+                <option value="cali">Cali</option>
+                <option value="valledupar">Valledupar</option>
+            </select><br><br>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sebasgao05. Esta página web fue creada por David Sebastian Barrera.</p>
+    </footer>
+</body>
+</html>
