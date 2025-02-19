@@ -15,7 +15,7 @@ body {
 /* Contenedor de la tarjeta */
 .container {
     width: 300px;
-    background-color: white;
+    background: linear-gradient(to right, #A9A9A9, #FFFFFF, #D3D3D3);
     border: 1px solid #cccccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
