@@ -47,9 +47,26 @@ body {
     background: linear-gradient(to right, #000000, #666666);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px rgba(255, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px rgba(72, 255, 0, 0.3);
 }
 
+/* Efecto hover */
+.button-hover, .link-hover {
+    display: inline-block;
+    background-color: #2b9700; /* Color inicial */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Cambio de color al pasar el mouse */
+.button-hover:hover, .link-hover:hover {
+    background-color: #0019ff; /* Nuevo color al hacer hover */
+}
 
 /* Descripción */
 .description {
