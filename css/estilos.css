@@ -1,29 +1,51 @@
-/* estilos.css */
-
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(to right, #969696, #d4d4d4); /* Degradado de grises oscuros */
 }
 
-/* Contenedor de la tarjeta */
 .container {
     width: 300px;
-    background: linear-gradient(to right, #A9A9A9, #FFFFFF, #D3D3D3);
+    background: linear-gradient(to right, #f5f5f5, #e0e0e0); /* Degradado de grises claros */
     border: 1px solid #cccccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #00000033;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
 }
 
-/* Foto de perfil */
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes highlight {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Clase para activar la animación */
+.highlight {
+    animation: highlight 1s ease-in-out;
+}
+
 .profile-pic {
     border-radius: 50%;
     width: 150px;
@@ -32,51 +54,32 @@ body {
     display: block;
 }
 
-/* Nombre */
+.social-button.follow {
+    justify-content: center; 
+}
+
 .name {
     font-size: 24px;
     color: #333333;
     margin: 10px 0;
 }
 
-/* Título con efecto de sombra y gradientes en títulos */
 .title {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: bold;
-    background: linear-gradient(to right, #000000, #666666);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px rgba(72, 255, 0, 0.3);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: black; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
-/* Efecto hover */
-.button-hover, .link-hover {
-    display: inline-block;
-    background-color: #2b9700; /* Color inicial */
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-}
-
-/* Cambio de color al pasar el mouse */
-.button-hover:hover, .link-hover:hover {
-    background-color: #0019ff; /* Nuevo color al hacer hover */
-}
-
-/* Descripción */
 .description {
     font-size: 14px;
     color: #444444;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 15px;
 }
 
-/* Redes sociales */
 .social-links {
     list-style: none;
     padding: 0;
@@ -85,28 +88,73 @@ body {
     gap: 10px;
 }
 
-.social-links li a {
+.social-button {
     text-decoration: none;
-    color: #0077b5; /* Color por defecto para LinkedIn */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.social-links li a:hover {
-    color: #005582; /* Color al pasar el mouse para LinkedIn */
+.social-button:hover {
+    transform: translateY(-5px); 
 }
 
-/* Colores específicos para cada red social */
-.social-links li a[href*="twitter.com"] {
-    color: #1DA1F2; /* Color para Twitter */
+.social-button.linkedin {
+    background-color: #0077b5;
 }
 
-.social-links li a[href*="twitter.com"]:hover {
-    color: #1991db; /* Color al pasar el mouse para Twitter */
+.social-button.github {
+    background-color: #333333;
 }
 
-.social-links li a[href*="github.com"] {
-    color: #333333; /* Color para GitHub */
+.social-button.twitter {
+    background-color: #1DA1F2;
 }
 
-.social-links li a[href*="github.com"]:hover {
-    color: #000000; /* Color al pasar el mouse para GitHub */
+.social-button.follow {
+    background-color: #00c853; 
+    margin-top: 15px; 
+    text-align: center;
+}
+
+.social-button.home {
+    background-color: #2c3e50;
+    margin-top: 15px; 
+}
+
+.social-button.linkedin:hover {
+    background-color: #005582; 
+}
+
+.social-button.github:hover {
+    background-color: #000000;
+}
+
+.social-button.twitter:hover {
+    background-color: #1991db;
+}
+
+.social-button.follow:hover {
+    background-color: #009624;
+}
+
+.social-button.home:hover {
+    background-color: #34495e;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 15px; 
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666666;
 }
