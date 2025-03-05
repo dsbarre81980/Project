@@ -159,3 +159,46 @@ footer {
     font-size: 12px;
     color: #666666;
 }
+
+/* Tema oscuro */
+body.dark-theme {
+    background: linear-gradient(to right, #333333, #555555);
+    color: #ffffff;
+}
+
+.dark-theme .container {
+    background: linear-gradient(to right, #444444, #666666);
+    border: 1px solid #777777;
+    color: #ffffff;
+}
+
+.dark-theme .name,
+.dark-theme .title,
+.dark-theme .description,
+.dark-theme footer {
+    color: #ffffff;
+}
+
+.dark-theme .social-button {
+    color: #ffffff;
+}
+
+.dark-theme .social-button.linkedin {
+    background-color: #005582;
+}
+
+.dark-theme .social-button.github {
+    background-color: #000000;
+}
+
+.dark-theme .social-button.twitter {
+    background-color: #1991db;
+}
+
+.dark-theme .social-button.follow {
+    background-color: #009624;
+}
+
+.dark-theme .social-button.home {
+    background-color: #34495e;
+}
